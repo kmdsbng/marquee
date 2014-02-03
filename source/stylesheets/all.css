@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+body {
+  background: #fff;
+  font-family: serif;
+}
+
+h1 {
+}
+
+.MarqueeFrame {
+  background-color: black;
+  width: 250px;
+  height: 50px;
+  position: relative;
+  overflow-y: hidden;
+  color: #111;
+}
+
+.MarqueeContent {
+  position: absolute;
+  left: 0px;
+  top: -5px;
+  width: 1000px;
+  height: 40px;
+  background-color: black;
+  color: #e83;
+  font-size: 40px;
+}
+
+
+.doc {
+  font-size: 14px;
+  margin: 0; }
+  .doc:before,
+  .doc:after {
+    opacity: .2;
+    padding: 6px;
+    font-style: normal;
+    position: relative;
+    content: "•"; }
+  .doc a {
+    color: rgba(0, 0, 0, 0.3); }
+    .doc a:hover {
+      color: #666; }
+
+.welcome {
+  -webkit-animation-name: welcome;
+  -webkit-animation-duration: .9s; }
+
+@-webkit-keyframes welcome {
+  from {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+   -webkit-transform: scale(0);
+   opacity: 0;
+  }
+  82.5% {
+    -webkit-transform: scale(1.03);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
